@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Rubik', sans-serif;
+    color: #5b6b82;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Jost', sans-serif;
+    color: #0b1f3a;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  ::selection {
+    background: #075be6;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1320px;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-card-hover;
+  }
+}
+
+/* Swiper pagination dots */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  background: #d1d5db !important;
+  transition: all 0.25s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #008cff !important;
+  box-shadow: 0 0 0 4px rgba(0, 140, 255, 0.15);
+}

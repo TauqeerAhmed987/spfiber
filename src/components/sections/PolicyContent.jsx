@@ -11,7 +11,7 @@ function Paragraphs({ items, keyPrefix = '' }) {
 export default function PolicyContent({ sections }) {
   return (
     <section className="py-20 md:py-28 bg-white">
-      <div className="container mx-auto px-4 max-w-3xl">
+      <div className="container mx-auto px-4">
         <div className="space-y-8">
           {sections.map((section, i) => (
             <Reveal key={i} index={i % 4}>
